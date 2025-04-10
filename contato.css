@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+/* Header */
+
+.header {
+  background: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+.header a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+.header a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.contact-button {
+  background: #0ea5e9;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Seção Contato */
+
+.contato {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contato h1 {
+  font-size: 3em;
+  color: #0ea5e9;
+  margin-bottom: 20px;
+}
+.contato p {
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #e2e8f0;
+}
+
+/* Formulário */
+
+.formulario {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.campo {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.campo label {
+  display: block;
+  margin-bottom: 5px;
+  color: #cbd5e1;
+}
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: none;
+  border-radius: 5px;
+  background: #334155;
+  color: white;
+  resize: none;
+  font-size: 1em;
+  font-family: "Inter", sans-serif;
+}
+.campo input:focus,
+.campo textarea:focus {
+  outline: 2px solid #0ea5e9;
+}
+button[type="submit"] {
+  background: #0ea5e9;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1em;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background: #0284c7;
+}
+
+
+/* Footer */
+
+.footer {
+  background: #121212;
+  padding: 40px 0;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-section {
+  width: 30%;
+  min-width: 250px;
+}
+.footer-section h3 {
+  color: #0ea5e9;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section ul li {
+  margin: 10px 0;
+  color: #bbbbbb;
+}
+.footer-section ul li a {
+  color: #bbbbbb;
+  text-decoration: none;
+}
+.footer-section ul li a:hover {
+  color: #0ea5e9;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #333;
+  color: #888;
+}
