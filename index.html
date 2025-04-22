@@ -1,215 +1,211 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Além dos Sonhos</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div class="header">
-      <h2>✈ Além dos Sonhos</h2>
-      <nav>
-        <a href="index.html" class="active">Início</a>
-        <a href="#">Destinos</a>
-        <a href="pacotes.html">Pacotes</a>
-        <a href="sobre.html">Sobre Nós</a>
-        <a href="contato.html">Contato</a>
-        <a href="contato.html" class="contact-button">Fale Conosco</a>
-      </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Além dos Sonhos</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="header">
+    <h2>✈ Além dos Sonhos</h2>
+    <nav>
+      <a href="index.html" class="active">Início</a>
+      <a href="#">Destinos</a>
+      <a href="pacotes.html">Pacotes</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="contato.html">Contato</a>
+      <a href="contato.html" class="contact-button">Fale Conosco</a>
+    </nav>
+  </div>
+  <div class="hero">
+    <h1>Descubra o Mundo</h1>
+    <p>
+      Explore as belezas naturais e a diversidade cultural do mundo com
+      nossos pacotes exclusivos.
+    </p>
+    <div class="buttons">
+      <a href="pacotes.html">Ver Pacotes</a>
+      <a href="#" class="secondary">Pacotes Promocionais</a>
     </div>
-    <div class="hero">
-      <h1>Descubra o Mundo</h1>
-      <p>
-        Explore as belezas naturais e a diversidade cultural do mundo com
-        nossos pacotes exclusivos.
-      </p>
-      <div class="buttons">
-        <a href="pacotes.html">Ver Pacotes</a>
-        <a href="#" class="secondary">Pacotes Promocionais</a>
+  </div>
+
+  <section class="search-section">
+    <h2>Busca Rápida</h2>
+    <form class="search-form">
+      <div class="form-group">
+        <label for="destino">Destino</label>
+        <select id="destino" name="destino">
+          <option>Escolha um destino...</option>
+          <option>Rio de Janeiro</option>
+          <option>São Paulo</option>
+          <option>Salvador</option>
+          <option>Florianópolis</option>
+        </select>
       </div>
-    </div>
-
-    <section class="search-section">
-      <h2>Busca Rápida</h2>
-      <form class="search-form">
-        <div class="form-group">
-          <label for="destino">Destino</label>
-          <select id="destino" name="destino">
-            <option>Escolha um destino...</option>
-            <option>Rio de Janeiro</option>
-            <option>São Paulo</option>
-            <option>Salvador</option>
-            <option>Florianópolis</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="data-ida">Data de Ida</label>
-          <input type="date" id="data-ida" name="data-ida" />
-        </div>
-        <div class="form-group">
-          <label for="data-volta">Data de Volta</label>
-          <input type="date" id="data-volta" name="data-volta" />
-        </div>
-        <button type="submit" class="search-button">Buscar Pacotes</button>
-      </form>
-    </section>
-
-    <section class="featured-destinations">
-      <h2>Destinos em Destaque</h2>
-      <p>Descubra locais incríveis para sua próxima viagem</p>
-      <div class="destinations-container">
-        <div class="destination">
-          <img
-            src="https://i0.wp.com/www.mdl.com.br/wp-content/uploads/2019/09/cidade-do-rio-de-janeiro.png?fit=950%2C600&ssl=1"
-            alt="Rio de Janeiro"
-          />
-          <h3>Rio de Janeiro <span class="badge offer">Oferta</span></h3>
-          <p>
-            Conheça as praias, o Cristo Redentor e a vibrante cultura carioca.
-          </p>
-          <p class="price">A partir de R$ 1.299</p>
-          <a href="#" class="btn">Saiba mais</a>
-        </div>
-        <div class="destination">
-          <img
-            src="https://media.staticontent.com/media/pictures/470c512a-47e8-49b5-aaed-1c56997e60a6"
-            alt="Fernando de Noronha"
-          />
-          <h3>Fernando de Noronha <span class="badge top">Top</span></h3>
-          <p>
-            O paraíso brasileiro com praias paradisíacas e águas cristalinas.
-          </p>
-          <p class="price">A partir de R$ 3.499</p>
-          <a href="#" class="btn">Saiba mais</a>
-        </div>
-        <div class="destination">
-          <img
-            src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/69000/69335-Argentina.jpg"
-            alt="Foz do Iguaçu"
-          />
-          <h3>Foz do Iguaçu <span class="badge popular">Popular</span></h3>
-          <p>Maravilhe-se com as Cataratas do Iguaçu e a Usina de Itaipu.</p>
-          <p class="price">A partir de R$ 1.199</p>
-          <a href="#" class="btn">Saiba mais</a>
-        </div>
+      <div class="form-group">
+        <label for="data-ida">Data de Ida</label>
+        <input type="date" id="data-ida" name="data-ida" />
       </div>
-      <a href="#" class="view-all">Ver todos os destinos</a>
-    </section>
-
-    <section class="why-choose-us">
-      <h2>Por que escolher a Além dos Sonhos?</h2>
-      <p>Oferecemos experiência, qualidade e segurança em todas as viagens</p>
-      <div class="features-container">
-        <div class="feature">
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/14035/14035451.png"
-            alt="Destinos Exclusivos"
-          />
-          <h3>Destinos Exclusivos</h3>
-          <p>
-            Oferecemos roteiros personalizados para os melhores destinos do
-            Brasil e do mundo.
-          </p>
-        </div>
-        <div class="feature">
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/3593/3593460.png"
-            alt="Melhor Preço"
-          />
-          <h3>Melhor Preço</h3>
-          <p>
-            Garantimos o melhor custo-benefício com pacotes completos e
-            parcelamento facilitado.
-          </p>
-        </div>
-        <div class="feature">
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/10797/10797331.png"
-            alt="Suporte 24h"
-          />
-          <h3>Suporte 24h</h3>
-          <p>
-            Nossa equipe está disponível 24 horas por dia para ajudar em
-            qualquer situação durante sua viagem.
-          </p>
-        </div>
-        <div class="feature">
-          <img
-            src="https://cdn-icons-png.flaticon.com/128/6048/6048470.png"
-            alt="Viagem Segura"
-          />
-          <h3>Viagem Segura</h3>
-          <p>
-            Todos os nossos pacotes incluem seguro viagem e assistência
-            completa.
-          </p>
-        </div>
+      <div class="form-group">
+        <label for="data-volta">Data de Volta</label>
+        <input type="date" id="data-volta" name="data-volta" />
       </div>
-    </section>
+      <button type="submit" class="search-button">Buscar Pacotes</button>
+    </form>
+  </section>
 
-    <section class="testimonials">
-      <h2>O que dizem nossos clientes</h2>
-      <p>Experiências reais de quem viajou conosco</p>
-      <div class="testimonial-card">
+  <section class="featured-destinations">
+    <h2>Destinos em Destaque</h2>
+    <p>Descubra locais incríveis para sua próxima viagem</p>
+    <div class="destinations-container">
+      <div class="destination">
         <img
-          src="https://cdn.pixabay.com/photo/2020/04/09/19/59/man-5022931_1280.jpg"
-          alt="Foto do Cliente"
-          class="testimonial-photo"
-        />
-        <p class="testimonial-text">
-          "O pacote para Gramado superou todas as expectativas! Hotéis
-          excelentes, passeios bem organizados e o atendimento da equipe foi
-          impecável. Recomendo a todos!"
+          src="https://images.unsplash.com/photo-1591190927683-1cd338cfdcbf?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Sunshine Coast" />
+        <h3>Sunshine Coast, Austrália <span class="badge offer">Oferta</span></h3>
+        <p>
+          A Sunshine Coast, localizada no sudeste de Queensland, é conhecida por suas praias deslumbrantes, como Noosa
+          Heads e Mooloolaba, além de um interior montanhoso
+          com vilarejos charmosos como Maleny. É um destino popular para surfistas, amantes da natureza e famílias em
+          busca de relaxamento à beira-mar.
         </p>
-        <h3 class="testimonial-name">Ricardo Santos</h3>
-        <p class="testimonial-location">Rio de Janeiro, RJ</p>
-        <div class="stars">★★★★★</div>
+        <p class="price">A partir de R$ 1.299</p>
+        <a href="pacotes.html" class="btn">Saiba mais</a>
       </div>
-      <div class="testimonial-navigation">
-        <button class="prev">&#8592;</button>
-        <button class="next">&#8594;</button>
+      <div class="destination">
+        <img
+          src="https://images.unsplash.com/photo-1671101757570-c0b573c6feb3?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Seul" />
+        <h3>Seul, Coreia do Sul <span class="badge top">Top</span></h3>
+        <p>
+          Seul é uma metrópole vibrante que combina tradição e modernidade. A cidade abriga palácios históricos como
+          Gyeongbokgung,
+          bairros tradicionais como Bukchon Hanok Village e marcos modernos como a N Seoul Tower, localizada no Monte
+          Namsan.
+        </p>
+        <p class="price">A partir de R$ 3.499</p>
+        <a href="pacotes.html" class="btn">Saiba mais</a>
       </div>
-    </section>
+      <div class="destination">
+        <img
+          src="https://images.unsplash.com/photo-1574974915729-40753c60260d?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Bucareste" />
+        <h3>Bucareste, Romênia <span class="badge popular">Popular</span></h3>
+        <p>Bucareste, a capital da Romênia, é conhecida por sua arquitetura eclética que mistura estilos históricos,
+          comunistas e modernos.
+          Destaques incluem o monumental Palácio do Parlamento, um dos maiores edifícios administrativos do mundo, e o
+          Palácio Real, que abriga
+          o Museu Nacional de Arte da Romênia.</p>
+        <p class="price">A partir de R$ 1.199</p>
+        <a href="pacotes.html" class="btn">Saiba mais</a>
+      </div>
+    </div>
+    <a href="#" class="view-all">Ver todos os destinos</a>
+  </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-section">
-                <h3>Além dos Sonhos</h3>
-                <p>Sua melhor escolha para viagens inesquecíveis!<br><br>
-                    Oferecemos pacotes personalizados para destinos nacionais e internacionais com preços competitivos e atendimento de excelência.</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="footer-section">
-                <h3>Links Rápidos</h3>
-                <ul>
-                    <li><a href="#">Página Inicial</a></li>
-                    <li><a href="#">Destinos</a></li>
-                    <li><a href="#">Pacotes</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Contato</h3>
-                <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> Av. Atlântica, 2000 - Rio de Janeiro, RJ</li>
-                    <li><i class="fas fa-phone"></i> +55 (21) 9876-5432</li>
-                    <li><i class="fas fa-envelope"></i> contato@alemdossonhos.com.br</li>
-                    <li><i class="fas fa-clock"></i> Segunda a Sexta: 9h às 18h</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2025 Além dos Sonhos. Todos os direitos reservados.
-        </div>
-    </footer>
-    
+  <section class="why-choose-us">
+    <h2>Por que escolher a Além dos Sonhos?</h2>
+    <p>Oferecemos experiência, qualidade e segurança em todas as viagens</p>
+    <div class="features-container">
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/128/14035/14035451.png" alt="Destinos Exclusivos" />
+        <h3>Destinos Exclusivos</h3>
+        <p>
+          Oferecemos roteiros personalizados para os melhores destinos do
+          Brasil e do mundo.
+        </p>
+      </div>
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/128/3593/3593460.png" alt="Melhor Preço" />
+        <h3>Melhor Preço</h3>
+        <p>
+          Garantimos o melhor custo-benefício com pacotes completos e
+          parcelamento facilitado.
+        </p>
+      </div>
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/128/10797/10797331.png" alt="Suporte 24h" />
+        <h3>Suporte 24h</h3>
+        <p>
+          Nossa equipe está disponível 24 horas por dia para ajudar em
+          qualquer situação durante sua viagem.
+        </p>
+      </div>
+      <div class="feature">
+        <img src="https://cdn-icons-png.flaticon.com/128/6048/6048470.png" alt="Viagem Segura" />
+        <h3>Viagem Segura</h3>
+        <p>
+          Todos os nossos pacotes incluem seguro viagem e assistência
+          completa.
+        </p>
+      </div>
+    </div>
+  </section>
 
-  </body>
+  <section class="testimonials">
+    <h2>O que dizem nossos clientes</h2>
+    <p>Experiências reais de quem viajou conosco</p>
+    <div class="testimonial-card">
+      <img src="https://cdn.pixabay.com/photo/2020/04/09/19/59/man-5022931_1280.jpg" alt="Foto do Cliente"
+        class="testimonial-photo" />
+      <p class="testimonial-text">
+        "O pacote para Gramado superou todas as expectativas! Hotéis
+        excelentes, passeios bem organizados e o atendimento da equipe foi
+        impecável. Recomendo a todos!"
+      </p>
+      <h3 class="testimonial-name">Ricardo Santos</h3>
+      <p class="testimonial-location">Rio de Janeiro, RJ</p>
+      <div class="stars">★★★★★</div>
+    </div>
+    <div class="testimonial-navigation">
+      <button class="prev">&#8592;</button>
+      <button class="next">&#8594;</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-section">
+        <h3>Além dos Sonhos</h3>
+        <p>Sua melhor escolha para viagens inesquecíveis!<br><br>
+          Oferecemos pacotes personalizados para destinos nacionais e internacionais com preços competitivos e
+          atendimento de excelência.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="#">Página Inicial</a></li>
+          <li><a href="#">Destinos</a></li>
+          <li><a href="#">Pacotes</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contato</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Av. Atlântica, 2000 - Rio de Janeiro, RJ</li>
+          <li><i class="fas fa-phone"></i> +55 (21) 9876-5432</li>
+          <li><i class="fas fa-envelope"></i> contato@alemdossonhos.com.br</li>
+          <li><i class="fas fa-clock"></i> Segunda a Sexta: 9h às 18h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Além dos Sonhos. Todos os direitos reservados.
+    </div>
+  </footer>
+
+
+</body>
+
 </html>
