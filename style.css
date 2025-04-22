@@ -20,6 +20,10 @@ body {
   text-decoration: none;
   margin: 0 15px;
 }
+.header a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
 .contact-button {
   background: #0ea5e9;
   padding: 10px 15px;
