@@ -70,6 +70,11 @@ body {
 .pacote p {
   margin: 5px 0;
 }
+
+.pacote img {
+  width: 200px;
+}
+
 .preco {
   font-size: 1.2em;
   font-weight: bold;
