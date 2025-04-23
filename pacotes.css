@@ -17,6 +17,11 @@ body {
   align-items: center;
   padding: 15px 50px;
 }
+
+.header-logo {
+  height: 80px;
+  width: auto;
+}
 .header a {
   color: white;
   text-decoration: none;

@@ -15,6 +15,11 @@ body {
   align-items: center;
   padding: 15px 50px;
 }
+
+.header-logo {
+  height: 80px;
+  width: auto;
+}
 .header a {
   color: white;
   text-decoration: none;
@@ -239,6 +244,7 @@ body {
   color: white;
   text-align: center;
   padding: 50px;
+  position: relative;
 }
 .testimonial-card {
   background: #111;
@@ -246,6 +252,13 @@ body {
   border-radius: 10px;
   max-width: 600px;
   margin: 20px auto;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.testimonial-card.active {
+  display: block;
+  opacity: 1;
 }
 .testimonial-photo {
   border-radius: 50%;
@@ -270,16 +283,17 @@ body {
   margin-top: 5px;
 }
 .testimonial-navigation {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .prev, .next {
   background: transparent;
   border: 1px solid #007bff;
   color: #0ea5e9;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  margin: 5px;
+  margin: 0 10px;
+  transition: all 0.3s ease;
 }
 .prev:hover, .next:hover {
   background: #0ea5e9;
